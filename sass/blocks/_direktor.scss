@@ -1,6 +1,10 @@
 .direktor{
   padding: 140px 0;
   background: #004047;
+  background-image: url(../../images/direk-left-bg.png),url(../../images/direk-right-bg.png);
+  background-repeat: no-repeat;
+  background-size: 200px,147px 100px;
+  background-position: calc(50% - 690px) top,calc(50% + 650px) bottom;
 }
 
 .direktor__title{
@@ -29,10 +33,35 @@
   margin: -38px -15px;
 }
 .direktor__item {
+  position: relative;
   margin: 38px 15px;
   padding: 35px 24px 56px;
   width: 350px;
   background: #012F34;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #9fad20;
+  }
+
+  &::before {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 43%;
+    bottom: -27px;
+    background-size: contain;
+    background-image: url(../../images/plusicon.svg);
+    background-repeat: no-repeat;
+    content: "";
+}
+}
+.item-modifile{
+  &::before{
+    transform: rotate(135deg);
+  }
 }
 .direktor__img {
   width: 96px;
@@ -72,4 +101,28 @@
   font-size: 15px;
   line-height: 25px;
   color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .direktor{
+    background-image: url(../../images/direk-left-bg@2x.png),url(../../images/direk-right-bg@2x.png);
+  }
 }

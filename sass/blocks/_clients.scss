@@ -1,0 +1,33 @@
+.clients{
+  background-image: url(../../images/clients-bg.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: calc(50% - 620px) top;
+  background-color: #012F34;
+  padding: 140px 0;
+}
+.clients__inner + .clients__inner {
+  display: flex;
+  margin-left: 79px;
+  // justify-content: space-between;
+}
+.clients__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.clients__brends + .clients__brends{
+  display: flex;
+  // align-items: center;
+  // margin-right: 79px;
+  // justify-content: space-between;
+}
+
+.clients__img + .clients__img{
+ margin-left: 75px;
+}
