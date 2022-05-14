@@ -1,0 +1,75 @@
+.direktor{
+  padding: 140px 0;
+  background: #004047;
+}
+
+.direktor__title{
+  max-width: 920px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 64px;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+.direktor__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  // flex-direction: column;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin: -38px -15px;
+}
+.direktor__item {
+  margin: 38px 15px;
+  padding: 35px 24px 56px;
+  width: 350px;
+  background: #012F34;
+}
+.direktor__img {
+  width: 96px;
+  height: 96px;
+}
+
+.modifile-name{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+  margin-bottom: 8;
+  margin: 0;
+}
+.modifile-jobs{
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.modifile-img ~ .modifile-img{
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+.direktor__name {
+  margin: 0;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+}
+.direktor__jobs {
+  margin: 0;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
