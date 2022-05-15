@@ -61,3 +61,53 @@
     cursor: pointer;
   }
 }
+button{
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+@media only screen and(max-width:768px){
+  .header{
+    padding: 64px 20px;
+  }
+
+  .header__link{
+    margin-right: 48px;
+  }
+  .header__logo{
+    width: 128px;
+    height: 32px;
+  }
+}
+
+@media only screen and(max-width:568px){
+  .header{
+    padding: 48px 0;
+  }
+  .menu{
+    display: none;
+  }
+  .link{
+    display: none;
+  }
+  .header__link{
+    margin-right: 0;
+  }
+  .button{
+    display: block;
+    margin-left: auto;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+}
+
+@media only screen and (max-width:375px){
+  .header{
+    padding: 32px 0 108px;
+  }
+  .header__inner{
+    width: 100%;
+    max-width: 327px;
+  }
+}

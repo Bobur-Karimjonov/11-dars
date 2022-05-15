@@ -41,26 +41,33 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
-
+  
   &:hover{
     background-color: #9fad20;
   }
-
-  &::before {
-    width: 56px;
-    height: 56px;
-    position: absolute;
-    left: 43%;
-    bottom: -27px;
-    background-size: contain;
-    background-image: url(../../images/plusicon.svg);
-    background-repeat: no-repeat;
-    content: "";
 }
+.direktor__button{
+  position: absolute;
+  bottom: -28px;
+  left: 43%;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background: #F67E7E;
+  border-radius: 50%;
+  
+  &:hover{
+    background: #79C8C7;
+    transform: rotate(135deg);
+    transition: all 0.3s ease;
+  }
 }
 .item-modifile{
-  &::before{
-    transform: rotate(135deg);
+  transform: rotate(135deg);
+  
+  &:hover{
+    transform: none;
+    transition: all 0.3s ease;
   }
 }
 .direktor__img {
@@ -102,6 +109,48 @@
   line-height: 25px;
   color: #FFFFFF;
 }
+@media only screen and (max-width:1250px){
+  .direktor{
+    background-position: top left,right bottom;
+  }
+  
+}
+@media only screen and (max-width:768px){
+  .direktor{
+    padding: 100px 0 128px;
+    background-position: calc(50% - 390px) top,calc(50% + 315px) bottom;
+  }
+  
+  .direktor__title{
+    margin-bottom: 48px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .direktor__list{
+    justify-content: center;
+  }
+  .direktor__item{
+    width: 281px;
+    margin: 38px 6px;
+  }
+}
+@media only screen and (max-width:568px){
+  .direktor{
+    padding: 88px 12px 116px;
+    background-position: calc(50% - 280px) calc(50% - 1000px),calc(50% + 210px) calc(50% + 950px);
+  }
+  .direktor__item{
+    width: 372px;
+    margin: 26px 0px;
+  }
+}
+@media only screen and (max-width:375px){
+  .direktor{
+    background-position: calc(50% - 190px) calc(50% - 997px),calc(50% + 120px) calc(50% + 955px)
+  }
+}
+
+
 
 
 

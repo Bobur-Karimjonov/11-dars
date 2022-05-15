@@ -35,3 +35,43 @@
   line-height: 28px;
   color: #012F34;
 }
+
+@media only screen and (max-width:1300px){
+  .ready{
+    background-position: bottom left;
+  }
+}
+@media only screen and (max-width:768px){
+  .ready{
+    background-position: calc(50% - 280px) calc(50% + 102px);
+  }
+  .ready__inner{
+    max-width: 573px;
+    margin: 0 auto;
+  }
+  .ready__title{
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+@media only screen and (max-width:568px){
+  .ready{
+    padding: 83px 0;
+    background-position: calc(50% - 185px) calc(50% + 155px);
+  }
+  .ready__inner{
+    max-width: 327px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  .ready__title{
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width:375px){
+  .ready{
+    background-position: calc(50% - 90px) calc(50% + 135px);
+  }
+}
